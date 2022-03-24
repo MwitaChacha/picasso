@@ -3,7 +3,7 @@ import trish from "../assets/_DSC0016.jpg"
 
 const Intro = () => {
   return (
-    <div>
+    <div className="pb-24">
       <div className="my-8">
         <h3 className="text-lg tracking-wide ">
           "<br />
