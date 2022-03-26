@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=DM+Serif+Display&family=IBM+Plex+Sans+Thai+Looped&family=Inter&family=Montserrat:wght@400;700&family=Nunito&family=Open+Sans&family=Poppins&family=Roboto&family=Sen:wght@400;700&display=swap');
-body {
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=DM+Serif+Display&family=IBM+Plex+Sans+Thai+Looped&family=Inter&family=Montserrat:wght@400;700&family=Noto+Serif&family=Nunito&family=Open+Sans&family=Poppins&family=Roboto&family=Sen:wght@400;700&display=swap');body {
   box-sizing: border-box;
  
 }
@@ -11,6 +10,15 @@ p {
    font-family: 'Inter';
 }
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'DM Serif Display';
-
+    font-family: 'Inter';
+/* font-weight: 600; */
 }
+/* img {
+  filter: grayscale(90%);
+}
+
+img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  transition: 250ms;
+} */
