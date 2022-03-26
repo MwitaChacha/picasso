@@ -6,9 +6,9 @@ const Intro = () => {
     <div className="pb-24">
       <div className="my-8">
         <h3 className="text-lg tracking-wide ">
-          "<br />
+          
           YOU'VE ALWAYS HAD THE POWER, YOU JUST HAD TO LEARN IT FOR YOURSELF
-          <br />"
+          
         </h3>
       </div>
       <div>
