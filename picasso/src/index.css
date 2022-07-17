@@ -1,20 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=DM+Serif+Display&family=IBM+Plex+Sans+Thai+Looped&family=Inter&family=Montserrat:wght@400;700&family=Noto+Serif&family=Nunito&family=Open+Sans&family=Poppins&family=Roboto&family=Sen:wght@400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=DM+Serif+Display&family=IBM+Plex+Sans+Thai+Looped&family=Inter&family=Montserrat:wght@400;700&family=Noto+Serif&family=Nunito&family=Open+Sans&family=Poppins&family=Roboto&family=Sen:wght@400;700&display=swap');body {
+body {
   box-sizing: border-box;
- 
-}
-p {
-   font-family: 'Inter';
-}
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Inter';
+  padding: 0;
+  margin: 0;
+  font-family: "Imported";
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
-img:hover {
-  transform: scale(1.05);
-  transition: 250ms;
-} 
+@font-face {
+  font-family: Imported;
+  src: url("./fonts/GTWalsheimPro-Regular.woff2");
+}
