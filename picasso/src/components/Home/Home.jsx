@@ -1,10 +1,20 @@
-import React from 'react'
-import './Home.css'
+import React, { useState, useEffect } from "react";
+import "./Home.css";
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  const [time, setTime] = useState("");
 
-export default Home
+useEffect(() => {
+  const getTime = () => {
+    const today = new Date();
+    const currentTime = today.getHours() + ":" + today.getMinutes();
+    console.log(currentTime);
+    setTime(currentTime);
+  };
+  getTime();
+}, [])
+
+  return <div>Home</div>;
+};
+
+export default Home;
