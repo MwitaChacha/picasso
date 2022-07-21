@@ -1,0 +1,33 @@
+.intro-text {
+  color: #583d72;
+}
+
+.time {
+  color: #f39189;
+  position: fixed;
+  bottom: 0;
+}
+
+.scroll {
+  color: gray;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.movie-col > .grid {
+  overflow-y: auto;
+  flex-wrap: nowrap;
+}
+
+.welcome {
+  background-image: url("/src/assets/images/willis.jpg") no-repeat;
+  
+/* color: transparent; */
+}

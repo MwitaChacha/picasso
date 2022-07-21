@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import "./Home.css";
 import photos from "../../constants/constants";
 import { motion } from "framer-motion";
+import SquareLoader from "react-spinners/SquareLoader";
 
 const Home = () => {
   const [time, setTime] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
+
 
   useEffect(() => {
     const getTime = () => {
@@ -20,13 +22,14 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
-    }, 5000);
+    }, 3000);
   });
 
+ 
   if (!loading) {
     return (
-      <div>
-        <h1 className="welcome text-9xl">hi</h1>
+      <div className="text-center items-center">
+        <SquareLoader className="mt-52" size={130} color={"#BB8082"} />
       </div>
     );
   } else {
@@ -61,7 +64,6 @@ const Home = () => {
               {photos.map((item) => {
                 return (
                   <>
-                    {" "}
                     <motion.img
                       whileInView={{
                         x: 0,
@@ -73,16 +75,29 @@ const Home = () => {
                         type: "spring",
                         stiffness: 100,
                       }}
-                      whileHover={{ scale: 1.05 }}
+                      whileHover={{ scale: 1.01 }}
                       onHoverStart={(e) => {}}
                       onHoverEnd={(e) => {}}
-
-                      className="img my-10 shadow-xl"
-                      key={item.key}
+                      className="img mt-20 shadow-xl mx-auto"
+                      key={item.id}
                       src={item.image}
                       alt=""
                     />
-                    {/* <p className="text-xs text-left px-20">"{item.quote}"</p> */}
+                    <motion.p
+                      initial={{
+                        x: 50,
+                      }}
+                      whileInView={{
+                        x: 0,
+                      }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 100,
+                      }}
+                      className="text-xs text-center px-20 mt-3 text-yellow-600"
+                    >
+                      "{item.quote}"
+                    </motion.p>
                   </>
                 );
               })}
@@ -96,6 +111,7 @@ const Home = () => {
         <div className="scroll p-10">
           <p className="animate-pulse text-sm">Scroll to exlore</p>
         </div>
+       
       </div>
     );
   }
