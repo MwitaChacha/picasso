@@ -16,8 +16,8 @@
 }
 
 .img {
-  width: 30rem;
-  height: 30rem;
+  width: 35vw;
+  height: 35vw;
   object-fit: cover;
 }
 
@@ -26,8 +26,8 @@
   flex-wrap: nowrap;
 }
 
-.welcome {
-  background-image: url("/src/assets/images/willis.jpg") no-repeat;
-  
-/* color: transparent; */
+.small-img {
+  width: 60vw;
+  height: 65vw;
+  object-fit: cover;
 }
