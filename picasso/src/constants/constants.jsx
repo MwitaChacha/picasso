@@ -15,6 +15,13 @@ import image14 from "../assets/images/rubik.png";
 import image15 from "../assets/images/van.jpg";
 import image16 from "../assets/images/eva.png";
 import image17 from "../assets/images/felix.jpg";
+import image18 from "../assets/images/back.jpg";
+import image19 from "../assets/images/lamp.jpg";
+import image20 from "../assets/images/team.jpg";
+import image21 from "../assets/images/hilla.jpg";
+import image22 from "../assets/images/road.jpg";
+import image23 from "../assets/images/girrafes.jpg";
+import image24 from "../assets/images/football.png";
 
 
 
@@ -39,7 +46,7 @@ const photos = [
   {
     id: 4,
     image: image4,
-    quote: "Go forth and have no fear.",
+    quote: "Who knew failure made you better.",
   },
   {
     id: 5,
@@ -111,8 +118,42 @@ const photos = [
   {
     id: 17,
     image: image17,
-    quote:
-      "If everything around seems dark, look again, you may be the light.",
+    quote: "If everything around seems dark, look again, you may be the light.",
+  },
+  {
+    id: 18,
+    image: image18,
+    quote: "I am not afraid of storms, for I'm learning how to sail my ship.",
+  },
+  {
+    id: 19,
+    image: image19,
+    quote: "The problem creates the solution, what stands in the way becomes the way.",
+  },
+  {
+    id: 20,
+    image: image20,
+    quote: "You are made for perfection, but you are not yet perfect. You are a masterpiece in the making.",
+  },
+  {
+    id: 21,
+    image: image21,
+    quote: "It is often in crisis that the biggest leaps are made.",
+  },
+  {
+    id: 22,
+    image: image22,
+    quote: "Although the world is full of suffering, it is also full of the overcoming of it.",
+  },
+  {
+    id: 23,
+    image: image23,
+    quote: "If everything around seems dark, look again, you may be the light.",
+  },
+  {
+    id: 24,
+    image: image24,
+    quote: "No such thing as a life that is better than yours.",
   },
 ];
 
